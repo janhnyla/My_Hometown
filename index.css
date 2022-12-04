@@ -9,22 +9,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #3f545e;
     font-weight: 400;
-    
 }
 
-#header {
-    background-image: url("./forde.jpg");
-    background-size: cover;
-    margin: 0 auto 0;
-    width: 720px;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    color: white;
-}
+/* Typographi */
+
 h1, h2, h3,h4, p{
     margin: 0;
 }
@@ -35,29 +23,22 @@ h1{
     margin-bottom: 4px;
 }
 
-#slogon h2{
-    background-color: #4f9d69;
-    padding: 5px 10px;
-    margin-top: 4px;
-}
-
-.activities-title h3{
-    color: #8097c4;
-}
-
 h4{
     color: #decbb7;
     text-shadow: 1px 1px 2px #ff5714 ;
-    
 }
+
 span{
     font-size: smaller;
     color: #3f545e;
-    
 }
+
 p{
     color: #3f545e;
 }
+
+/* Links */
+
 a{
     color: #3f545e;
 }
@@ -66,8 +47,36 @@ a:focus{
     color: #ff5714;
 }
 
-#activities-heading{
-    width: 680px;
+/* Sections */
+    /* Header */
+.header {
+    background-image: url("images/forde.jpg");
+    background-size: cover;
+    margin: 0 auto 0;
+    max-width: 720px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: white;
+}
+
+.slogon h2{
+    background-color: #4f9d69;
+    padding: 5px 10px;
+    margin-top: 4px;
+}
+
+    /* Activities */
+
+.activities-title h3{
+    color: #8097c4;
+}
+
+.activities-heading{
+    max-width: 680px;
     margin: 0 auto;
     background-color: #decbb7;
     color: #ff5714;
@@ -77,14 +86,13 @@ a:focus{
     text-shadow: 0 0 1px black;        
 }
 
-
 .activities-main{
-    width: 720px;
+    max-width: 720px;
     background-color: #decbb7;
     display: flex;
     margin: 0 auto;
-  
 }
+
 .activities-container{
     width: 100%;
     margin: 0;
@@ -94,9 +102,11 @@ a:focus{
     align-items: center;
     padding: 5px;
 }
+
 .activities-img{
     margin-bottom: 0;
 }
+
 .activities-title{
     margin-top: 10px;
     margin-bottom: 5px;
@@ -107,7 +117,6 @@ a:focus{
     margin-bottom: 90px;
     padding: 5px;
 
-    
 }
 .activities-img img {
     border-radius: 50%;
@@ -115,8 +124,10 @@ a:focus{
     width: 100px;
 }
 
-#tour-guide{
-    width: 400px;
+/* Tour-guide */
+
+.tour-guide{
+    max-width: 400px;
     height: 200px;
     background-color: #4f9d69;
     display: flex;
@@ -127,7 +138,7 @@ a:focus{
     box-shadow: 0px 5px 3px black;
 }
 
-#tour-guide h3{
+.tour-guide h3{
     color: #fff;
     font-weight: 700;
     letter-spacing: 0.7px;
@@ -137,7 +148,9 @@ a:focus{
 .tour-guide-img{
     width: 200px;
     height: 215px;
-    background-image: url("ian_rudy.jpg");
+    max-width: 200px;
+    object-fit: contain;
+    background-image: url("images/ian_rudy.jpg");
     background-size: cover;
 }
 
@@ -155,11 +168,12 @@ a:focus{
     text-shadow: 0 0 3px black;
 }
 
+/* Photo-contest */
 
-
-#photo-contest{
+.photo-contest{
     width: 680px;
     height: 500px;
+    max-width: 680px;
     margin: 0 auto;
     background-color: #decbb7;
     color: #8097c4;
@@ -171,35 +185,14 @@ a:focus{
     flex-direction: column;
 }
 
-#photo-contest > div{
+.photo-contest > div{
     margin-bottom: 25px;
-
-}
-
-#footer{
-    width: 680px;
-    height: 100px;
-    background-color: #8097c4;
-    color: #decbb7;
-    margin: 30px auto 0 auto;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    
-}
-
-#footer-info,
-#footer-open{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    font-weight: 700;
 }
 
 .winner{
     width: 300px;
     height: 400px;
-    background-image: url("sunnfjordkommune.jpg");
+    background-image: url("images/sunnfjordkommune.jpg");
     background-size: contain;
     margin: 0 auto;
     position: relative;
@@ -209,9 +202,10 @@ a:focus{
     display: none;
     position: absolute;
 }
+
 .winner:hover,
 .winner:focus{
-    background-image: url("winner.jpeg");
+    background-image: url("images/winner.jpeg");
     background-size: cover;
     width: 450px;
 }
@@ -222,6 +216,51 @@ a:focus{
     left: 5px;
 }
 
-#photo-next p{
+.photo-next p{
     margin-top: 15px;
+}
+/* Footer */
+
+.footer{
+    max-width: 680px;
+    height: 100px;
+    background-color: #8097c4;
+    color: #decbb7;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footer-info,
+.footer-open{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-weight: 700;
+}
+
+@media (max-width: 550px){
+    
+    .photo-contest{
+        max-width: 400px;
+    }
+    
+    .photo-contest h2{
+        max-width: 350px
+    }
+    .winner{
+        display: flex;
+        max-width: 300px;
+        background-size: cover;
+    }
+    .footer{
+        flex-direction: column;
+        height: 200px;
+        margin: 0;
+    }
+    .footer-info{
+        padding-top: 25px;
+    }
+
 }
